@@ -1,7 +1,13 @@
 # Python Mini Project for Student Management System
+# This Project provides various Functionalities, like
+# To View all Record
+# To add a new Record
+# To Search a Student's Details either by his Name of Roll Number
+# To Delete a Student's Details either by his Name of Roll Number
 
 from time import sleep
 
+# Function to add new Record
 def AddDetails():
     new_record = list()
     print('')
@@ -18,6 +24,7 @@ def AddDetails():
         roll_list.append(roll_number)
     return Verify(new_record)
 
+# Function to Verify Entered Details
 def Verify(new_record):
     branch_list = ['CSE', 'IT', 'ECE', 'EE', 'ME']
     print('Wait a Moment ...')
@@ -35,6 +42,7 @@ def Verify(new_record):
             print('Enter Details Again')
             AddDetails()
 
+# Function to Remove Record
 def RemoveDetails():
     flag = 0
     print('')
@@ -48,6 +56,7 @@ def RemoveDetails():
     if flag == 0:
         print('Data not Found')
 
+# Function to print details of all Students
 def ViewDetails():
     print('\nFetching Details ...')
     sleep(2)
@@ -59,6 +68,7 @@ def ViewDetails():
         print('No Data Exist')
     print('')
 
+# Function to Search the details of a Particular Student
 def SearchStudent():
     flag = 0
     print('')
@@ -73,6 +83,7 @@ def SearchStudent():
         print('Data not Found\n')
 
 
+# Calling function as per user's choice
 student_list = list()
 roll_list = list()
 
