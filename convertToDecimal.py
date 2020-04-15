@@ -43,7 +43,7 @@ def Main():
             input_number = input('Enter Number : ')[::-1].lower()
             print()
         else:
-            input_value = input('Enter Number : ')[::-1]
+            input_value = input('Enter Number : ')[::-1]            # [::-1] is used to reverse the string
             input_number = int(input_value)
             print()
     else:
