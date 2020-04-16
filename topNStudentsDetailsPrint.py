@@ -22,5 +22,8 @@ for lst_ptr1 in range(len(student_list)):
             student_list[lst_ptr2], student_list[lst_ptr2 + 1] = Swap(student_list[lst_ptr2], student_list[lst_ptr2 + 1])
 
 top = int(input('Enter the Number of Top Students Details you want to see : '))
-for data in range(top):
-    print(student_list[data])
+if top <= len(student_list):
+    for data in range(top):
+        print(student_list[data])
+else:
+    print('Invalid')
